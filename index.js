@@ -3,7 +3,7 @@ var cors = require('cors')
 const express = require('express');
 const http = require('http');
 const app = express();
-
+app.use(express.json());
 app.use(cors());
 
 let server = http.createServer(app);
