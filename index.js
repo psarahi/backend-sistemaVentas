@@ -30,7 +30,7 @@ app.use('/api/pedido', pedido);
 app.use('/api/login', auth);
 
 
-const port = 3003;
+const port = process.env.PORT || 3003;
 server.listen(port, () => console.log('Escuchando Puerto: ' + port));
 
 console.log(process.env.PASS_MONGO);
